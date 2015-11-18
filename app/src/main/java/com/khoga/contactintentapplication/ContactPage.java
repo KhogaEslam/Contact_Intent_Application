@@ -28,7 +28,7 @@ public class ContactPage extends Activity implements View.OnClickListener {
         Bundle extras = getIntent().getExtras();
         if(extras == null) return;
 
-        contactObject = (ContactObject) getIntent().getSerializableExtra("object");
+        contactObject = (ContactObject) getIntent().getSerializableExtra("Object");
 
         contactName.setText(contactObject.getName());
         contactEmail.setText(contactObject.getEmail());
